@@ -1,0 +1,16 @@
+{
+  "name": "NemID paste",
+  "version": "1.0",
+  "description": "Allow pasting in NemID applet",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://applet.danid.dk/*"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "js": ["let_me_paste.js"]
+    }
+  ],
+
+  "manifest_version": 2
+}
