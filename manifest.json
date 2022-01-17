@@ -1,6 +1,8 @@
 {
+  "manifest_version": 3,
+
   "name": "NemID paste",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Allow pasting in NemID applet",
   "content_scripts": [
     {
@@ -9,7 +11,5 @@
       "all_frames": true,
       "js": ["let_me_paste.js"]
     }
-  ],
-
-  "manifest_version": 2
+  ]
 }
